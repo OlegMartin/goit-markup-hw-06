@@ -340,15 +340,30 @@ img {
 }
 
 .form-input{
+  position: relative;
   width: 100%;
   height: 40px;
-  padding: 14px 15px; 
+  padding: 14px 42px; 
   
   color: var(--primery-text-color);
   background-color: var(--primary-white-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  cursor: pointer;
 }
+
+.name-svg{
+  position: absolute;
+  top: 55%;
+  left: 15px;
+}
+
+.name-svg:focus {
+  color: #2196f3;
+}
+
+
 
 .textarea {
   width: 100%;
@@ -398,10 +413,6 @@ img {
   padding: 10px 55px;
 }
 
-
-.name-svg {
-  
-}
 
 
 /* Section */
