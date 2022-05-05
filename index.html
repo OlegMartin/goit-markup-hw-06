@@ -80,45 +80,47 @@
                     <h2 class="modal-tittle">Оставьте свои данные, мы вам перезвоним</h2>
                     <form action="#" name="form" autocomplete="off" novalidate >
                         <div class="form-field">
-                            <label class="form-label" for="contact-name">Имя</label>
                             <input class="form-input person" id="contact-name" type="text" name="contact-name">
-                            <div class="form-img">
-                                <svg class="name-svg" width="13px" height="13px">
-                                    <use href="./images/icons/sprite.svg#icon-modal-person"></use>
-                                </svg>
-                            </div>
+                            <label class="form-label" for="contact-name">Имя</label>
+                            <svg class="name-svg" width="12px" height="12px">
+                                <use href="./images/icons/sprite.svg#icon-modal-person"></use>
+                            </svg>
                             
                         </div>
 
                         <div class="form-field">
+                            <input class="form-input" id="contact-tel" type="tel" name="contact-tel">                           
                             <label class="form-label" for="contact-tel">Телефон</label>
-                            <input class="form-input" id="contact-tel" type="tel" name="contact-tel">
-                            <div class="form-img">
-                                <svg class="name-svg" width="13px" height="13px">
-                                    <use href="./images/icons/sprite.svg#icon-modal-phone"></use>
-                                </svg>
-                            </div>
+                            <svg class="name-svg" width="12px" height="12px">
+                                <use href="./images/icons/sprite.svg#icon-modal-phone"></use>
+                            </svg>
                         </div>
 
                         <div class="form-field">
-                            <label class="form-label" for="contact-email">Почта</label>
                             <input class="form-input" id="contact-email" type="email" name="contact-email">
-                            <div class="form-img">
-                                <svg class="name-svg" width="13px" height="13px">
-                                    <use href="./images/icons/sprite.svg#icon-modal-mail"></use>
-                                </svg>
-                            </div>
+                            <label class="form-label" for="contact-email">Почта</label>
+                            
+                            <svg class="name-svg" width="12px" height="12px">
+                                <use href="./images/icons/sprite.svg#icon-modal-mail"></use>
+                            </svg>
                         </div>
 
-                        <div class="form-field">
-                            <label class="form-label" for="textarea">Комментарий</label>
-                            <textarea class="textarea" name="feedback" id="textarea" rows="10" placeholder="Введите текст" ></textarea>
+                        <div class="form-field textarea">
+                            <textarea class="form-textarea" name="feedback" id="textarea" rows="10" placeholder="Введите текст"></textarea>
+                            <label class="form-label-textarea" for="textarea">Комментарий</label>
+                            
                         </div>
 
-                        <div class="form-field">
-                            <input id="policy" type="checkbox" name="policy">
-                            <label class="policy" for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                        <div class="form-field checkbox">
+                            <label class="check">
+                            <input class="check-input" type="checkbox" name="polisy" value=" ">
+                            <span class="icon-check"></span>
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="link-polisy" href="">Условия договора</a>
+                            </label>
                         </div>
+
+
                         <div class="send-button">
                             <button class="button form-button" type="submit">Отправить</button>
                         </div>
