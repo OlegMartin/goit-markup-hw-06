@@ -73,15 +73,16 @@
            <div data-modal class="backdrop is-hidden">
                <div class="modal">
                     <button class="button-close" data-modal-close>
-                        <svg width="11px" height="11px">
+                        <svg width="18px" height="18px">
                             <use href="./images/icons/sprite.svg#icon-close"></use>
                         </svg>
                     </button>
                     <h2 class="modal-tittle">Оставьте свои данные, мы вам перезвоним</h2>
                     <form action="#" name="form" autocomplete="off" novalidate >
                         <div class="form-field">
-                            <input class="form-input person" id="contact-name" type="text" name="contact-name">
                             <label class="form-label" for="contact-name">Имя</label>
+                            <input class="form-input person" id="contact-name" type="text" name="contact-name">
+                            
                             <svg class="name-svg" width="12px" height="12px">
                                 <use href="./images/icons/sprite.svg#icon-modal-person"></use>
                             </svg>
@@ -89,16 +90,18 @@
                         </div>
 
                         <div class="form-field">
-                            <input class="form-input" id="contact-tel" type="tel" name="contact-tel">                           
                             <label class="form-label" for="contact-tel">Телефон</label>
+                            <input class="form-input" id="contact-tel" type="tel" name="contact-tel">                           
+                            
                             <svg class="name-svg" width="12px" height="12px">
                                 <use href="./images/icons/sprite.svg#icon-modal-phone"></use>
                             </svg>
                         </div>
 
                         <div class="form-field">
-                            <input class="form-input" id="contact-email" type="email" name="contact-email">
                             <label class="form-label" for="contact-email">Почта</label>
+                            <input class="form-input" id="contact-email" type="email" name="contact-email">
+                            
                             
                             <svg class="name-svg" width="12px" height="12px">
                                 <use href="./images/icons/sprite.svg#icon-modal-mail"></use>
@@ -106,8 +109,9 @@
                         </div>
 
                         <div class="form-field textarea">
-                            <textarea class="form-textarea" name="feedback" id="textarea" rows="10" placeholder="Введите текст"></textarea>
                             <label class="form-label-textarea" for="textarea">Комментарий</label>
+                            <textarea class="form-textarea" name="feedback" id="textarea" rows="10" placeholder="Введите текст"></textarea>
+                            
                             
                         </div>
 
@@ -475,16 +479,18 @@
         </div>
         <div class="join">
             <h3 class="footer-social-tittle ">Подпишитесь на рассылку</h3>
-            <div class="join-section">
-                <label class="join_lable" for="email"></label>
-                <input id="email" class="join_input" type="email" name="email" placeholder="E-mail">
-                <button class="button join-button" type="submit">
-                    Подписаться
-                    <svg class="join_svg" width="24px" height="24px">
-                        <use href="./images/icons/sprite.svg#icon-modal-send"></use>
-                    </svg>
-                </button>
-            </div>
+            <form action="#" name="form-join" novalidate>
+                <div class="join-section">
+                    <label class="join_lable" for="email"></label>
+                    <input id="email" class="join_input" type="email" name="email" placeholder="E-mail">
+                    <button class="button join-button" type="submit">
+                        Подписаться
+                        <svg class="join_svg" width="24px" height="24px">
+                            <use href="./images/icons/sprite.svg#icon-modal-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </footer>
