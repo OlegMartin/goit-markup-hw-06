@@ -397,7 +397,7 @@ img {
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: var(--primery-text-color);
 }
 
 .form-label-textarea {
